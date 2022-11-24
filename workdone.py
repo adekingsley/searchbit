@@ -1,6 +1,6 @@
 from bitcoin import *
-privkey = 61136754624128405710
-while privkey > 61136754624128405000:
+privkey = 57191150000000000012
+while privkey > 57191150000000000000:
     privkey = privkey + 1
     pubkey = privkey_to_pubkey(privkey)
     tri = compress(pubkey)
@@ -11,6 +11,6 @@ while privkey > 61136754624128405000:
         with open('private_key.txt', 'w') as f:
             f.write(str(privkey))
             break
-    if privkey == 73786976294838206463:
+    if privkey == 57191170000000000000:
         print("search range exhausted")
         break
