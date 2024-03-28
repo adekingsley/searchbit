@@ -86,7 +86,11 @@ In this section, provide detailed explanations and code examples for each functi
 
 ### Address Brute-Force and Public Key Brute-Force
 
-As mentioned earlier, the address brute-force operation might be slower due to Python's GIL. For users who have the public key but lost the private key, the public key brute-force operation could be faster. The script provides a `private_key_brute()` function for users to attempt to retrieve the private key given a target public key.
+As mentioned earlier, the address brute-force operation might be slower due to Python's GIL. For users who have the public key but lost the private key, the public key brute-force operation could be faster. The script provides a `private_key_brute()` 
+```bash
+   python mym.py brute
+   ```
+function for users to attempt to retrieve the private key given a target public key.
 
 Please note that brute-forcing should only be performed for experimental purposes and on private keys that you legally own. Attempting to brute-force private keys that do not belong to you is illegal and unethical.
 
@@ -98,9 +102,6 @@ In the "Examples" section, we provide real-world scenarios of using the script f
 
 Contributions to the Bitcoin Key Utilities script are welcome! If you find bugs or have ideas for improvements, feel free to open an issue or submit a pull request on GitHub.
 
-### License
-
-Bitcoin Key Utilities is released under the [MIT License](https://opensource.org/licenses/MIT), granting users the freedom to modify and distribute the code with proper attribution.
 
 **Disclaimer**: Bitcoin Key Utilities is provided "as-is" and should be used responsibly and legally. The developers and maintainers of this script are not responsible for any misuse, damage, or loss resulting from the use of this software. Always exercise caution and ensure you have proper authorization to perform Bitcoin-related activities.
 
